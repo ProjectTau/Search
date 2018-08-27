@@ -8,7 +8,14 @@ The project will be devloped in go. With a javascript and html frontend. The app
 
 ## App Rough Outline/(The app is one type of search Server)
 
-The app will store a gigabyte of web data to search through. The app will poll the central server for search quaries relating to its data. It will search its data and respond with a result or an negative awknowlage. The app may also act as a web crawler tbd.
+The app will be able to act as one of the server types.
+
+- Request Server
+- Search Server
+- Ranking Server
+
+**Old**
+-The app will store a gigabyte of web data to search through. The app will poll the central server for search quaries relating to its data. It will search its data and respond with a result or an negative awknowlage. The app may also act as a web crawler tbd.
 
 ## Search Engine
 
@@ -53,11 +60,13 @@ A search server will be a computer that can process a search request. (Or more l
 2. How close together are the words that were searched for.
 3. Which section of the text contains the words
 4. Domain Ranking
+- Calculation for every domain u <h3>Domain Ranking = ∑ df<sub>u</sub></h3> where pf it the domain frequency of u.
 - How frequently is the domain visted by our search engine users.
-- How many domains link to this domain, their domain ranking
+- How many domains link to this domain, their frequency.
 5. Page Ranking
+- Calculation for every page u <h3>Page Ranking = ∑ pf<sub>u</sub></h3> where pf it the page frequency of u.
 - How frequently is the domain visted by our search engine users.
-- How many pages link to this page, their page ranking
+- How many pages link to this page, their frequency.
 
 ## Web Crawlers
 
