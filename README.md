@@ -57,7 +57,9 @@ A search server will be a computer that can process a search request. (Or more l
 ## How a search will be ranked
 
 1. Does it contain all the words searched for
-2. How close together are the words that were searched for.
+2. Specificity Ranking
+- How close together are the words that were searched for.
+- For Each Keyword in each section.
 3. Which section of the text contains the words
 4. Domain Ranking
 - Calculation for every domain u <h3>Domain Ranking = ∑ df<sub>u</sub></h3> where pf it the domain frequency of u.
